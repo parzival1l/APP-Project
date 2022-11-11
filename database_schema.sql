@@ -1,0 +1,67 @@
+#SQL_table creation commands 
+
+CREATE TABLE "Teams" (
+"id" INTEGER,
+  "full_name" TEXT,
+  "abbreviation" TEXT,
+  "nickname" TEXT,
+  "city" TEXT,
+  "state" TEXT,
+  "year_founded" INTEGER
+)
+
+CREATE TABLE "Active_Players" (
+"id" INTEGER,
+  "full_name" TEXT,
+  "first_name" TEXT,
+  "last_name" TEXT
+)
+
+CREATE TABLE "All_Players" (
+"id" INTEGER,
+  "full_name" TEXT,
+  "first_name" TEXT,
+  "last_name" TEXT
+)
+
+CREATE TABLE "Career_Stats" (
+	"PLAYER_ID"	INTEGER NOT NULL UNIQUE,
+	"FGM"	INTEGER NOT NULL,
+	"FGA"	INTEGER NOT NULL,
+	"FG_PCT"	REAL NOT NULL,
+	"FG3M"	INTEGER,
+	"FG3A"	INTEGER,
+	"FG3_PCT"	REAL,
+	"FTM"	INTEGER,
+	"FTA"	INTEGER,
+	"FT_PCT"	REAL,
+	"REB"	INTEGER,
+	"AST"	INTEGER,
+	"STL"	INTEGER,
+	"BLK"	INTEGER,
+	"PTS"	INTEGER,
+	"GP"	INTEGER NOT NULL,
+	"GS"	INTEGER NOT NULL,
+	PRIMARY KEY("PLAYER_ID")
+)
+
+CREATE TABLE "Season_Stats" (
+	"PLAYER_ID"	INTEGER NOT NULL UNIQUE,
+	"SEASON_ID"	TEXT NOT NULL,
+	"TEAM_ABBREVIATION"	TEXT,
+	"FGM"	INTEGER,
+	"FGA"	INTEGER,
+	"FG_PCT"	REAL,
+	"FG3M"	INTEGER,
+	"FG3A"	INTEGER,
+	"FG3_PCT"	REAL,
+	"FTM"	INTEGER,
+	"FTA"	INTEGER,
+	"FT_PCT"	REAL,
+	"REB"	INTEGER,
+	"AST"	INTEGER,
+	"STL"	INTEGER,
+	"BLK"	INTEGER,
+	"PTS"	INTEGER,
+	PRIMARY KEY("PLAYER_ID")
+)
