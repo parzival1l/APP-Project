@@ -1,0 +1,42 @@
+/* selected styles */
+td._selected {
+  background-color: #eef5f5;
+}
+th._selected {
+  background-color: #bcc;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+
+/* IGNORE THESE STYLES */
+html {
+  font-family: sans-serif;
+}
+table {
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #ccc;
+  user-select: none;
+  cursor: pointer;
+}
+th, td {
+  padding: 10px 20px;
+}
