@@ -18,12 +18,13 @@ class San :
         cur.execute(query)
         records = cur.fetchall()
         print(records)
-        # return 
+        return records
 
 
 
 if __name__ == "__main__": 
     s1 = San()
-    s1.find_player_names("Stephen Curry")
-
+    r = s1.find_player_names("Stephen Curry")
+    print(type(r))
+    print(r)
 
