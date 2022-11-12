@@ -4,8 +4,8 @@
 <title>Home Page</title>
 <meta name="viewport" content="width=device-width,initial-scale=1"> 
 <link rel="stylesheet" href="style.css">
-<style>
-</style>
+ <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+
 <script src=""></script>
 <body>
 
@@ -18,6 +18,7 @@
       <p>Click below to see the <br> Player Statistics </p>
       
       <button type="submit"><a href="/player_stats">Player Stat</a></button>
+
     </div>
   </div>
 </body>

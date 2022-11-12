@@ -24,7 +24,7 @@ body {
 label{
 	display: block;
   width: 100%;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 28pt;
   font-family: "Fjalla One";
   margin-bottom: 28pt;
@@ -40,7 +40,7 @@ label{
 input {
   display: block;
   width: 100%;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 28pt;
   font-family: "Fjalla One";
   margin-bottom: 28pt;

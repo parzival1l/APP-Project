@@ -3,34 +3,17 @@
 <meta charset="UTF-8">
 <head>
     <title>Player Stat</title>
-    <link href="style3.css" rel="stylesheet"/>
-    <script src="main.js"></script>
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style3.css')}}">
+   
 </head>
 
 <body>
 
     <h3>Player Stat</h3>
 
-    <!-- custom table element with is="dynamic-table" -->
-    <table
-      class="table-js"
-      is="dynamic-table"
-      data-sort-column="0"
-      data-sort-order="desc"
-    >
-      <thead>
-        <th>Player Name</th>
-        <th>Total Points</th>
-     
-      </thead>
-     
-      <tbody>
-          
-        <tr></tr>
-      
-      </tbody>
-    </table>
-    <!-- <table border=5>
+    
+    
+     <table border=5>
         <thead>
             <td>Player Name</td>
             <td>Total Points</td>
@@ -43,7 +26,7 @@
         </tr>
 
         {% endfor %}
-    </table> -->
+    </table> 
     <br><br>
 
     <a href="/">Go back to home page</a>

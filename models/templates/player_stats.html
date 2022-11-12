@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
-<link href="style2.css" rel="stylesheet"/>
+<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style2.css')}}">
 <title>Player stat</title>
 <body>
     <form action="/form_player_stats" method="POST">
@@ -10,9 +10,11 @@
         
 <div class="player-form">
       <form action="/form_player_stats" method="POST">
-    <label>Enter Player Name</label>
     
-    <input name="player_name" placeholder="Player Name" required="" type="text"/>
+        <label>How many points has the player scored in total? Enter Player Name</label>
+        <input name="player_name" placeholder="Player Name" required="" type="text"/>
+    
+    <!-- <input name="player_name" placeholder="List the names of players who have scored more than 20000 points for their career?" required="" type="text"/> -->
     
     <button type="button">Submit</button>
     <br>
