@@ -13,28 +13,59 @@
     <h3>Player Stat</h3>
 
 
-     <table border=5>
-        <thead>
-            <td>Player Name</td>
-            <td>Total Points</td>
-        </thead>
+     <!-- <table border=5> -->
 
-        {% for row in rows %}
+<div class="wrapper">
+  
+  <div class="table">
+    
+    <div class="row header">
+      <div class="cell">
+        Player Name
+      </div>
+      <div class="cell">
+        Total Points
+      </div>
+      
+    </div>
+    
+    <div class="row">
+      <div class="cell" data-title="Player Name">
+            <td>Luke Peters</td>
+      </div>
+      <div class="cell" data-title="Total Points">
+        <td>25</td>
+        
+      </div>
+    <div class="row">
+      <tr>
+          {% for row in rows %}
+          <td>{{row[0]}}</td>
+          <td>{{row[1]}}</td>
+      </tr>
+      {% endfor %}
+    </div>
+    
+  </div>
+    
 
-        <tr>
-            <td>{{row[0]}}</td>
-            <td>{{row[1]}}</td>
-            
-        </tr>
+  
+</div>
+        
 
-        {% endfor %}
-    </table> 
+    <!-- </table>  -->
     <br><br>
 
-    <a href="/">Go back to home page</a>
+    <a href="/">Back to Homepage</a>
+             
 
     
     
+    
+    
+  
+  
+  
 </body>
 
 </html>
