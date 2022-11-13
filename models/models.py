@@ -12,7 +12,7 @@ class San :
         pass
 
     def find_player_names(self,player_name): 
-        conn = sqlite3.connect("D:/My Important Documents/Activities in Concordia University/SOEN 6441_APP_Fall2022/APP-Project/models/static/stylesNBA_database.db")
+        conn = sqlite3.connect("D:/My Important Documents/Activities in Concordia University/SOEN 6441_APP_Fall2022/APP-Project/NBA_database.db")
         cur = conn.cursor()
         query = 'SELECT  B.full_name, A.PTS from Career_Stats AS A JOIN All_Players as B where B.full_name == "{}" and B.id = A.PLAYER_ID;'.format(player_name)
         cur.execute(query)
