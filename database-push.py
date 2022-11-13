@@ -35,7 +35,7 @@ print(career_stats.columns)
 season_stats = pd.read_excel("/Users/nandy/Documents/App-data/season_stats_final.xlsx")
 print(season_stats.columns)
 
-sqliteConnection = sqlite3.connect("D:/My Important Documents/Activities in Concordia University/SOEN 6441_APP_Fall2022/APP-Project/NBA_database.db")
+sqliteConnection = sqlite3.connect("/Users/nandy/Git_repos/APP-Project/NBA_database.db")
 cur = sqliteConnection.cursor()
 
 season_stats.to_sql('Season_Stats', sqliteConnection, if_exists='replace', index=False) # - writes the pd.df to SQLIte DB
