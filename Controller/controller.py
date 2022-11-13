@@ -36,6 +36,16 @@ def player_stat():
 def player_stat(): 
     return render_template("player_filter.html")
 
+@app.route("/form_player_filter", methods = ["GET","POST"])
+def form_player_stat(): 
+    name = request.form["total_points"]
+    rows = obj.find_player_names(name)
+    print(rows, type(rows))
+    if len(rows) > 0 : 
+        return render_template("s_layer_filter.html", rows=rows)
+    else : 
+        return render_template("failure_page.html")
+
 @app.route("/player_filter")
 def player_stat(): 
     return render_template("player_filter.html")
