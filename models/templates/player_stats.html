@@ -7,8 +7,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="style-player-stats.css"> -->
 <title>Player stat</title>
 <body>
-    <form action="/form_player_stats" method="POST">
-        
+          
         
 <div class="player-form">
       <form action="/form_player_stats" method="POST">
@@ -16,74 +15,52 @@
         <label>Active Players</label>
        
         <ol class="player-list">
-        <li>Stephen John<span class="delete"></span><span class="check"></span></li>
-        <li>Greg Abraham<span class="delete"></span><span class="check"></span></li>
-        <li>Warren Buffet<span class="delete"></span><span class="check"></span></li>
-        <li>Price Pritchett<span class="delete"></span><span class="check"></span></li>
+        <li>Stephen Curry<span class="delete"></span><span class="check"></span></li>
+        <li>Lebron James<span class="delete"></span><span class="check"></span></li>
+        <li>Anthony Davis<span class="delete"></span><span class="check"></span></li>
+        <li>Klay Thompson<span class="delete"></span><span class="check"></span></li>
       </ol>
-       <button type="submit">Submit</button>
+  </form>
 
-      
-<!-- . List all active players playing for GSW
-2. How many points has Stephen Curry scored in total ?
-3. Which player has the most blocks in his carrer ? 
-4. List the names of players who have scored more than 20000 points for their career ? -->
-
+      <form action="/form_player_stats" method="POST">
+            <label>1. How many points has the player scored in total? Enter Player Name</label>
+            <input name="player_name" placeholder="Player Name" required="" type="text"/><button type="submit">Submit</button>
   </form>
 
   <form action="/form_player_stats" method="POST">
 
-        
-
-        <label>How many points has the player scored in total? Enter Player Name</label>
-        <input name="player_name" placeholder="Player Name" required="" type="text"/>
-        <button type="submit">Submit</button>
-    <!-- <input name="player_name" placeholder="List the names of players who have scored more than 20000 points for their career?" required="" type="text"/> -->
-
-        <label>Which player has the most blocks in his career? </label>
-        <button type="submit">Submit</button>
-
-        
-<!-- . List all active players playing for GSW
-2. How many points has Stephen Curry scored in total ?
-3. Which player has the most blocks in his carrer ? 
-4. List the names of players who have scored more than 20000 points for their career ? -->
-
-  </form>
-
-  <form action="/form_player_stats" method="POST">
-
-        
-
-        <label>Which player has the most blocks in his career? </label>
-        <button type="submit">Submit</button>
-
-      
-        
+        <label>2. List all active players playing for GSW</label>
+        <button type="submit">Submit</button>  
     <br>
-    <a href="/">Back to Home Page</a>
-<!-- . List all active players playing for GSW
-2. How many points has Stephen Curry scored in total ?
-3. Which player has the most blocks in his carrer ? 
-4. List the names of players who have scored more than 20000 points for their career ? -->
+  </form>
+
+  <form action="/form_player_stats" method="POST">
+        <label>3. List the names of players who have scored more than <br> <input name="points" placeholder="points" required="" type="text"/> for their career? </label><br> 
+        <button type="submit">Submit</button>
+    <br>
+    
+  </form>
+
+  <form action="/form_player_stats" method="POST">
+        <label>4. Which player has the most blocks in his career ?</label>
+        <button type="submit">Submit</button>
+    <br>
+  
+
 
   </form>
 
   <form action="/form_player_stats" method="POST">
-
-      
-
-        <label>List the names of players who have scored more than <br> <input name="points" placeholder="points" required="" type="text"/> points for their career ?</label>
+        <label>5. List the names and IDS of players averaging shooting more than <input name="percent" placeholder="percent" required="" type="text"/> from the field in this season in descending order?</label>
         <button type="submit">Submit</button>
-        
     <br>
+    
     <a href="/">Back to Home Page</a>
-<!-- . List all active players playing for GSW
-2. How many points has Stephen Curry scored in total ?
-3. Which player has the most blocks in his carrer ? 
-4. List the names of players who have scored more than 20000 points for their career ? -->
+
 
   </form>
+
+
 </div>
 
 </body>

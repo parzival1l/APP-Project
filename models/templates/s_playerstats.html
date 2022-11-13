@@ -12,8 +12,6 @@
 
     <h3>Player Stat</h3>
 
-
-
 <div class="wrapper">
   
     <div class="table">
@@ -47,7 +45,8 @@
             
           </div>
         </div>
-
+        
+    <!-- 
         <div class="row">
 
             <div class="cell" data-title="Player Name">
@@ -59,11 +58,11 @@
             <div class="cell" data-title="Total Points">
                 <tr>
                 
-                <td>{{row[1]}}</td>                    
+                <td>{{row[1]}}</td>                  
                 </tr>
             </div>
             
-        </div>
+        </div> -->
         
   </div>
 </div>
@@ -74,7 +73,33 @@
 
     <a href="/">Back to Homepage</a>
                
+<table border=5>
 
+        <thead>
+
+            <td>Player Name</td>
+
+            <td>Total Points</td>
+
+        </thead>
+
+
+
+        {% for row in rows %}
+
+        <tr>
+
+            <td>{{row[0]}}</td>
+
+            <td>{{row[1]}}</td>
+
+        </tr>
+
+
+
+        {% endfor %}
+
+    </table>
         
     
     
