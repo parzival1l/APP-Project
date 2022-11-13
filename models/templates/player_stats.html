@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+<!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/> -->
 <!-- <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style2.css')}}"> -->
-<link rel="stylesheet" type="text/css" href="static/styles/style2.css">
+<link rel="stylesheet" type="text/css" href="models/static/styles/style-player-stats.css">
 <title>Player stat</title>
 <body>
     <form action="/form_player_stats" method="POST">
@@ -11,6 +11,10 @@
         
 <div class="player-form">
       <form action="/form_player_stats" method="POST">
+
+        <label>Active Players</label>
+        <li>Stephen John</li>
+        <li>Greg Abraham</li>
     
         <label>How many points has the player scored in total? Enter Player Name</label>
         <input name="player_name" placeholder="Player Name" required="" type="text"/>
@@ -20,7 +24,10 @@
     <button type="submit">Submit</button>
     <br>
     <a href="/">Back to Home Page</a>
-
+<!-- . List all active players playing for GSW
+2. How many points has Stephen Curry scored in total ?
+3. Which player has the most blocks in his carrer ? 
+4. List the names of players who have scored more than 20000 points for their career ? -->
 
   </form>
 </div>
