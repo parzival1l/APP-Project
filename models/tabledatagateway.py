@@ -5,7 +5,7 @@ class TDG:
         pass
     
     def connection_establish(self):
-        conn = sqlite3.connect("/Users/nandy/Git_repos/APP-Project/NBA_database.db")
+        conn = sqlite3.connect("/Users/nandy/Git_repos/APP-Project/data/NBA_database.db")
         cur = conn.cursor()
         return cur 
 

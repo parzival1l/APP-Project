@@ -1,5 +1,5 @@
 from flask import request, render_template, Flask
-from models import DBMapper
+from DBMapper import DBMapper
 
 app = Flask(__name__)
 obj = DBMapper()
