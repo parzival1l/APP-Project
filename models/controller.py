@@ -1,7 +1,5 @@
 from flask import *
 from models import San 
-# import request/s
-
 # app = Flask(__name__, template_folder="new_folder_name")
 #move controllers to a folder and keep app.run() outside in a seperate folder and import app line down below 
 app = Flask(__name__)
