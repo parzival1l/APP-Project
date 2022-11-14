@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Player Stat</title>
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style-player-table.css')}}">
+    <!-- <link rel="stylesheet" type="text/css" href="static/styles/style-player-table.css"> -->
+    <style>
+        table {
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: #333;
+}
+
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+.cell-highlight {
+  background-color: gold;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tbody th {
+  background-color: #36c;
+  color: #fff;
+  text-align: left;
+}
+
+    </style>
+</head>
+
+<body>
+  
+    <h3>Player Stat</h3>
+    <table border=5>
+        <thead>
+            <td>Player Name</td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{row[0]}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+    <br><br>
+
+    <a href="/">Go back to home page</a>
+  
+  
+</body>
+
+</html>
+

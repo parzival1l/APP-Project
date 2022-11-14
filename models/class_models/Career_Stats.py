@@ -24,4 +24,10 @@ class Career_Stats:
     def get_player_id(self): 
         return self.player_id
 
+    def set_PTS(self, pts): 
+        self.PTS = pts
+
+    def get_PTS(self): 
+        return self.PTS
+
     
