@@ -1,5 +1,5 @@
 from flask import *
-from models import San 
+from models import DBMapper 
 
 # import sys
 # sys.path.append('/Users/nandy/Git_repos/APP-Project/models/')
@@ -8,7 +8,7 @@ from models import San
 #move controllers to a folder and keep app.run() outside in a seperate folder and import app line down below 
 app = Flask(__name__)
 
-obj = San()
+obj = DBMapper()
 
 #Home-Page
 @app.route("/")
