@@ -1,8 +1,12 @@
 from flask import *
+import sys
+sys.path.append('/Users/nandy/Git_repos/APP-Project/models/')
 from models import San 
+
+
 # app = Flask(__name__, template_folder="new_folder_name")
 #move controllers to a folder and keep app.run() outside in a seperate folder and import app line down below 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='/Users/nandy/Git_repos/APP-Project/models/templates/')
 
 obj = San()
 
