@@ -7,6 +7,7 @@ from tabledatagateway import TDG
 
 class DBMapper:
     """
+    method
     """
 
     def __init__(self):
@@ -55,8 +56,3 @@ class DBMapper:
         records = self.tdg.fg_percent_filter(self.season_stats.get_FG_PCT())
         return records
 
-if __name__ == "__main__":
-    s1 = DBMapper()
-    r = s1.find_player_names("Stephen Curry")
-    print(type(r))
-    print(r)
