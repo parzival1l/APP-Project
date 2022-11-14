@@ -30,4 +30,10 @@ class Season_Stats:
     def get_team_abbreviation(self): 
         return self.team_abbreviation
 
+    def set_FG_PCT(self, fg_pct): 
+        self.FG_PCT = fg_pct
+
+    def get_FG_PCT(self): 
+        return self.FG_PCT
+
     
