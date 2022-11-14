@@ -17,8 +17,7 @@ class TDG:
         Function to find the total points a player has scored taking in the player name as parameters
         """    
         cursor = self.connection_establish()
-        query = 'SELECT  B.full_name, A.PTS from Career_Stats AS A JOIN All_Players as B where B.full_name == "{}" and B.id = A.PLAYER_ID;'.format(
-            player_name)
+        query = f"SELECT  B.full_name, A.PTS from Career_Stats AS A JOIN All_Players as B where B.full_name == '{player_name}' and B.id = A.PLAYER_ID;"
         cursor.execute(query)
         records = cursor.fetchall()
         return records
@@ -38,8 +37,7 @@ class TDG:
         Function to find all players who have scored more the give points total for their carrers.
         """
         cursor = self.connection_establish()
-        query = "SELECT B.full_name, A.PTS from All_Players as B, Career_Stats AS A where B.id = A.PLAYER_ID and A.PTS > {};".format(
-            points)
+        query = f"SELECT B.full_name, A.PTS from All_Players as B, Career_Stats AS A where B.id = A.PLAYER_ID and A.PTS > '{points}';"
         cursor.execute(query)
         records = cursor.fetchall()
         return records
@@ -59,8 +57,7 @@ class TDG:
         Function to return all the players shooting more than a given percent for the season 2021-22 in descending order.
         """
         cursor = self.connection_establish()        
-        query = "SELECT A.PLAYER_ID, B.full_name, A.FG_PCT from All_Players as B, Season_Stats AS A WHERE (B.id = A.PLAYER_ID and A.FG_PCT > {} and A.SEASON_ID = '2020-21')  ORDER BY A.FG_PCT  DESC;".format(
-            fg_percent)
+        query = f"SELECT A.PLAYER_ID, B.full_name, A.FG_PCT from All_Players as B, Season_Stats AS A WHERE (B.id = A.PLAYER_ID and A.FG_PCT > '{fg_percent}' and A.SEASON_ID = '2020-21')  ORDER BY A.FG_PCT  DESC;"            
         cursor.execute(query)
         records = cursor.fetchall()
         return records
