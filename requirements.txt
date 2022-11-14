@@ -1,0 +1,5 @@
+Flask==2.2.2
+numpy==1.23.4
+pandas==1.5.1
+nba_api
+tqdm==4.64.1
