@@ -9,26 +9,20 @@ The project is primarily aimed at developing an end-to-end application and to de
 ## Project demo video and documentation can be found here... 
 https://drive.google.com/drive/folders/1kKOIJ5VB9PhCBplEOHjxAUjDgmUYjEAI?usp=sharing
 
-## Usage
-
-```sh
-python models/controller.py 
-```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Setup & Installation 
-
+Required packages for running the application. 
 ```sh
 pip install -r requirements.txt
 ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Usage
+Before running the application make sure to setup the database and update the path variables. You can use the pre-existing DB file in the data folder.
+```sh
+python models/controller.py 
+```
 
 ## Authors
-
+```sh
 Nanda Kumar K - 40220298 
 Naoreen Chowdhury - 40217016
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
+```
